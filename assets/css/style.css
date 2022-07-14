@@ -1,0 +1,191 @@
+:root{
+    --tipografia: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    --colorazul: #1877f2;
+    --colorazuldark: #4267b2;
+    --colorverde: #42B72A;
+    --colorgris: #EFF2F5;
+    --colorgrisocurito: #e0e2e4;
+    --colorblanco: #fff;
+    --colornegro: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-all{
+    background: var(--colorgris);
+    width: 100%;
+    height: 76vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    font-family: var(--tipografia);
+}
+
+.div-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 70px;
+}
+
+.container-logo-text{
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    width: 500px;
+}
+
+.container-logo-text img{
+    width: 60%;
+    margin: -30px 0 -15px -30px;
+}
+
+.container-login{
+    background-color: var(--colorblanco);
+    border-radius: 8px;
+    padding: 10px ;
+    padding-top: 10px;
+    padding-bottom: 24px;
+    text-align: center;
+    box-shadow:0 0 8px rgba(182, 177, 171, 0.6);
+    font-family: var(--tipografia);
+    width: 396px;
+}
+
+.div-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-form form input{
+    margin: 6px 0;
+    padding: 14px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--colorgrisocurito);
+    font-family: var(--tipografia);
+    font-size: 17px;
+}
+
+::placeholder{
+    color: #999c9e;
+}
+
+.btn-sesion{
+    width: 332px;
+    line-height: 48px;
+    background-color: var(--colorazul);
+    color: var(--colorblanco);
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 16px;
+    margin-top: 10px;
+}
+
+.olvido-contra{
+    margin-top: 16px;
+    
+}
+.olvido-contra a{
+    text-decoration: none;
+    color: var(--colorazul);
+}
+
+.separator-line{
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 16px;
+}
+
+
+.btn-crear-cuenta{
+    line-height: 48px;
+    background-color: var(--colorverde);
+    color: var(--colorblanco);
+    border-radius: 6px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 16px;
+}
+
+.a-crear-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 14px;
+    margin: 28px 30px 0;
+    font-family: var(--tipografia);
+}
+
+.a-text-crear{
+    text-decoration: none;
+    color: var(--colornegro);
+    font-weight: bold;
+    padding-right: 4px;
+    padding-left: 5px;
+}
+
+.a-crear-pagina p{
+    width: 270px;
+}
+
+footer{
+    background: var(--colorblanco);
+}
+
+.div-lang{
+    margin: 0 20%;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.div-lang ul, .div-opc ul{
+    display: contents;
+}
+
+.div-lang li, .div-opc li, .text-meta p{
+    display: inline;
+    padding-left: 17px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.div-lang a, .div-opc a{
+    text-decoration: none;
+    color: #86898b;
+}
+
+.separator-footer{
+    border-bottom: 1px solid #dadde1;
+    margin: 10px 345px;
+}
+
+.div-opc{
+    margin: 1% 20%;
+}
+
+.mas{
+    padding: 0 4px;
+}
+
+.text-meta{
+    margin: 1% 20%;
+    color: #86898b;
+    display: flex;
+    padding-bottom: 50px;
+}
